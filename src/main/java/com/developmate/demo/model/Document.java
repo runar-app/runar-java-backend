@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id;
 
 import java.util.List;
 
-@org.springframework.data.mongodb.core.mapping.Document (collection = "runardb")
+@org.springframework.data.mongodb.core.mapping.Document (collection = "library_ru_notes")
 public class Document {
     @Id
     private String _id;
