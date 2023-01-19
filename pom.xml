@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.developmate</groupId>
-	<artifactId>runar-java-lib</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>runar-java-backend</artifactId>
+	<version>0.0.1</version>
 	<name>API demo</name>
 	<description>Demo of new library DB API</description>
 	<properties>
