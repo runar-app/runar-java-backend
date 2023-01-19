@@ -1,7 +1,7 @@
 package com.developmate.demo.controller;
 
 import com.developmate.demo.model.Document;
-import com.developmate.demo.repository.DocRepository;
+import com.developmate.demo.repository.DocumentRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,8 +13,8 @@ import java.util.Optional;
 
 @RestController
 public class DocumentController {
-    private final DocRepository repository;
-    public DocumentController(DocRepository repository) {
+    private final DocumentRepository repository;
+    public DocumentController(DocumentRepository repository) {
         this.repository = repository;
     }
     @GetMapping("/menu")
