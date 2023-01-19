@@ -5,7 +5,7 @@
 
 ## Setup
 1. Clone project
-2. Enter your credentials for dataBase to replace username:password in /src/main/resources/application.yaml
+2. Enter your credentials for dataBase replacing username:password in /src/main/resources/application.yaml
 3. Open terminal on root project directory
 4. Type `./mvnw package`
 5. After BUILD SUCCESS change directory to target with `cd target`
