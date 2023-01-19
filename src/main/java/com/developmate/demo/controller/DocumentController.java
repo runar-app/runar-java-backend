@@ -12,9 +12,9 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class DocController {
+public class DocumentController {
     private final DocRepository repository;
-    public DocController(DocRepository repository) {
+    public DocumentController(DocRepository repository) {
         this.repository = repository;
     }
     @GetMapping("/menu")
