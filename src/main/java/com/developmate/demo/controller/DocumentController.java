@@ -23,6 +23,11 @@ public class DocumentController {
                 .sorted(Comparator.comparing(Document::getSortOrder))
                 .toList();
     }
+
+    @GetMapping("/")
+    public List<Document> getRootMenu() {
+        return "Hey";
+    }
     @GetMapping("/menu/{id}")
     public List<Document> getSubMenus(@PathVariable("id") String id) {
         Optional<Document> documents = repository.findBy_id(id);
