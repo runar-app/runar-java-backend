@@ -25,7 +25,7 @@ public class DocumentController {
     }
 
     @GetMapping("/")
-    public List<Document> getRootMenu() {
+    public String getRootMenu() {
         return "Hey";
     }
     @GetMapping("/menu/{id}")
