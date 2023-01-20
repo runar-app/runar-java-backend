@@ -17,4 +17,9 @@ public class DocumentController {
     public String getHelloWorld() {
         return "Hey";
     }
+
+    @GetMapping("/menu")
+    public String getMenu() {
+        return "Menu endpoint";
+    }
 }
