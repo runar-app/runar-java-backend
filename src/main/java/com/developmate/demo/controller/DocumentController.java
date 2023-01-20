@@ -15,11 +15,11 @@ public class DocumentController {
 
     @GetMapping("/")
     public String getHelloWorld() {
-        return "Hey";
+        return "Root endpoint";
     }
 
-    @GetMapping("/menu")
+    @GetMapping("/test")
     public String getMenu() {
-        return "Menu endpoint";
+        return "Server works!";
     }
 }
