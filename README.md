@@ -16,4 +16,5 @@
 
 ## How to use
 
-`http://localhost:8080/` - Root end point
+`http://localhost:8080/api/v2/` - to get root menu
+`http://localhost:8080/api/v2/id` - to get submenus of document where id is identity of document in DB 
