@@ -24,9 +24,9 @@ public class DocumentController {
     }
     @GetMapping(value = "/{id}", produces = "application/json")
     public List<Document> getSubMenus(@PathVariable("id") String id) {
-        Optional<Document> documents = repository.findBy_id(id);
+        Optional<Document> documents = repository.findById(id);
         return documents.map(value -> value.getChildIds().stream()
-                .map(repository::findBy_id)
+                .map(repository::findById)
                 .filter(Optional::isPresent)
                 .map(Optional::get)
                 .sorted(Comparator.comparing(Document::getSortOrder))

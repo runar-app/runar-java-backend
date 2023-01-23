@@ -10,5 +10,5 @@ import java.util.Optional;
 @Repository
 public interface DocumentRepository extends MongoRepository<Document, String> {
     List<Document> findByType(String type);
-    Optional<Document> findBy_id(String id);
+    Optional<Document> findById(String id);
 }
