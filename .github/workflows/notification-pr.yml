@@ -1,0 +1,16 @@
+name: Notify about PR
+on: pull_request
+
+jobs:
+  telegram:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send telegram message
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: markdown
+          message: |
+            PULL REQUEST from ${{ github.actor }}
+            https://github.com/profolio-team/customer-admin/pull/${{ github.event.pull_request.number }}
