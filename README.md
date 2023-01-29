@@ -21,7 +21,7 @@ docker run -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root
 
 2. Build and run server (cmd from root folder)
 
-`./mvnw package && java -jar -Dspring.profiles.active=dev target/runar-java-backend-0.0.1.jar`
+`./dev`
 
 ## Test endpoints
 
