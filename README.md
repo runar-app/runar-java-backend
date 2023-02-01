@@ -15,12 +15,24 @@ git clone git@github.com:runar-app/runar-java-backend.git
 
 1. Start mongo DB in a docker container using the following command:
 
+Mac/Unix:
+
 ```
 docker run -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root -p 27017:27017 --name runar-mongo -v ${HOME}/workspace/runar/mongo-db-data:/data/db -d mongo
 ```
 
+Windows:
+
+```
+docker run -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root -p 27017:27017 --name runar-mongo -v %USERPROFILE%/workspace/runar/mongo-db-data:/data/db -d mongo
+```
+
 2. Build and run server (cmd from root folder)
 
+Windows:
+`dev.cmd`
+
+Mac/Unix
 `./dev`
 
 ## Test endpoints
