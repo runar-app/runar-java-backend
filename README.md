@@ -2,20 +2,45 @@
 
 ## Prerequisites
 
-- install [JDK19](https://jdk.java.net/19/)
-- NO local database needed
-- NO other programs needed
+- Install Java v.19 [JDK19](https://jdk.java.net/19/)
+- Docker (to run mongodb)
 
-## Setup
+## Code Checkout
 
-1. Clone project
-2. Change directory to root project directory
-3. Type `./mvnw package`
-4. After BUILD SUCCESS change directory to target with `cd target`
-5. Run project with `java -jar runar-java-backend-0.0.1.jar`
+```
+git clone git@github.com:runar-app/runar-java-backend.git
+```
 
-## How to use
+### Run the project locally
 
-`http://localhost:8080/api/v2/` - to get root menu
+1. Start mongo DB in a docker container using the following command:
 
-`http://localhost:8080/api/v2/id` - to get submenus of document where id is identity of document in DB 
+Mac/Unix:
+
+```
+docker run -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root -p 27017:27017 --name runar-mongo -v ${HOME}/workspace/runar/mongo-db-data:/data/db -d mongo
+```
+
+Windows:
+
+```
+docker run -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root -p 27017:27017 --name runar-mongo -v %USERPROFILE%/workspace/runar/mongo-db-data:/data/db -d mongo
+```
+
+2. Build and run server (cmd from root folder)
+
+Windows:
+`dev.cmd`
+
+Mac/Unix
+`./dev`
+
+## Test endpoints
+
+#### Get root menu
+
+[http://localhost:8080/api/v2/](http://localhost:8080/api/v2/)
+
+#### Get submenus of document where id is identity of document in DB
+
+[http://localhost:8080/api/v2/id](http://localhost:8080/api/v2/id)

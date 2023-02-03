@@ -13,4 +13,4 @@ jobs:
           format: markdown
           message: |
             PULL REQUEST from ${{ github.actor }}
-            https://github.com/profolio-team/customer-admin/pull/${{ github.event.pull_request.number }}
+            https://github.com/runar-app/runar-java-backend/pull/${{ github.event.pull_request.number }}

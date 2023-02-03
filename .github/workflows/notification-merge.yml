@@ -15,4 +15,4 @@ jobs:
           format: markdown
           message: |
             🔥 New merge from ${{ github.actor }} 🔥
-            ${{ github.event.commits[0].message }}
+            ${{ github.event.commits[0].url }}
