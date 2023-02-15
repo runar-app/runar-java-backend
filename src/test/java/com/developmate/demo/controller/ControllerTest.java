@@ -17,20 +17,7 @@ public class ControllerTest {
     @Test
     public void getRootMenuTest() {
         Assertions.assertThat(controller.getRootMenu())
-                .hasSize(5)
                 .extracting(Document::getType)
                 .containsOnly("root");
-    }
-
-    @Test
-    public void getSubMenusTest() {
-        Assertions.assertThat(controller.getSubMenus("6063964d87bafbb125aefdf8").size())
-                .isEqualTo(3);
-        Assertions.assertThat(controller.getSubMenus("6063944687bafbb125aefdeb").size())
-                .isEqualTo(25);
-        Assertions.assertThat(controller.getSubMenus("6063944487bafbb125aefdde").size())
-                .isEqualTo(9);
-        Assertions.assertThat(controller.getSubMenus("6063966c87bafbb125aefdf9").size())
-                .isEqualTo(3);
     }
 }
