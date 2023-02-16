@@ -13,7 +13,6 @@ jobs:
     
     env:
       DB_ACCESS: ${{secrets.DB_ACCESS}}
-      TEST_DB_ACCESS: ${{secrets.TEST_DB_ACCESS}}
 
     steps:
     - uses: actions/checkout@v3
