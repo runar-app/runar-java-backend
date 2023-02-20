@@ -15,7 +15,6 @@
 	<description>Demo of new library DB API</description>
 	<properties>
 		<java.version>19</java.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,11 +39,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-resources-plugin</artifactId>
-			<version>3.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>de.flapdoodle.embed</groupId>
